@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>后台管理</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Dropzone.js 拖拽上传-->
+  <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <!-- 这里是载入inc/side.html -->
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="index.html" class="site_title">
+              <i class="fa fa-paw"></i>
+              <span>HONGYI</span>
+            </a>
+          </div>
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <!-- <h3>General</h3> -->
+              <ul class="nav side-menu">
+                <li>
+                  <a>
+                    <i class="fa fa-home"></i> 首页
+                    <span class="fa fa-chevron-down"></span>
+                  </a>
+                  <ul class="nav child_menu">
+                    <li>
+                      <a href="index.html">概览</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <a href="shops.html">
+                    <i class="fa fa-laptop"></i> 店铺管理
+                  </a>
+                </li>
+                <li>
+                  <a href="task.html">
+                    <i class="fa fa-laptop"></i> 任务管理
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 订单
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 用户
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 消息
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 日志
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 服务项目
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 服务人员
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-laptop"></i> 产品
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+
+            <a data-toggle="tooltip" data-placement="top" title="退出登陆" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <!-- <div class="page-title">
+                    <div class="title_left">
+                      <h3>Users
+                        <small>Some examples to get you started</small>
+                      </h3>
+                    </div>
+              
+                    <div class="title_right">
+                      <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="clearfix"></div>
+               -->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>添加店铺  
+                  </h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <br>
+                  
+                  <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+          
+                    <div class="form-group">
+                      <label for="title" class="control-label col-md-3 col-sm-3 col-xs-12">店名</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="title" class="form-control col-md-7 col-xs-12" type="text" name="title" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="picture" class="control-label col-md-3 col-sm-3 col-xs-12">图片</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!-- <input type="file" accept="image/*" multiple="multiple"> -->
+                        <div action="form_upload.html" class="dropzone"></div>
+                        <input type="file" accept="image/*" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="tel" class="control-label col-md-3 col-sm-3 col-xs-12">电话</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="tel" class="form-control col-md-7 col-xs-12" type="number" name="tel" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="address" class="control-label col-md-3 col-sm-3 col-xs-12">地址</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="address" class="form-control col-md-7 col-xs-12" type="text" name="address" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="time" class="control-label col-md-3 col-sm-3 col-xs-12">营业时间</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="time" class="form-control col-md-7 col-xs-12" type="text" name="time" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="intro" class="control-label col-md-3 col-sm-3 col-xs-12">简介</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea class="form-control" rows="3" placeholder="店铺简介" required></textarea>
+                      </div>
+                    </div>
+          
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                        <button type="submit" class="btn btn-success" onclick="window.location.href='shops.html'">确定</button>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+      </div>
+      <!-- /page content -->
+
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- iCheck -->
+  <!-- <script src="../vendors/iCheck/icheck.min.js"></script> -->
+
+
+  <!-- 验证插件 -->
+  <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+
+  <!-- Dropzone.js 文件拖拽上传-->
+  <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+
+</body>
+
+</html>
