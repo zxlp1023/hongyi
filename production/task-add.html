@@ -17,8 +17,7 @@
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- Datatables -->
-    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+   
 
     
     <!-- Custom Theme Style -->
@@ -40,7 +39,7 @@
           
             <!-- menu profile quick info -->
           
-            <!-- sidebar menu -->
+           <!-- sidebar menu -->           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">             <div class="menu_section">               <!-- <h3>General</h3> -->               <ul class="nav side-menu">                 <li>                   <a>                     <i class="fa fa-home"></i> 首页                     <span class="fa fa-chevron-down"></span>                   </a>                   <ul class="nav child_menu">                     <li>                       <a href="index.html">概览</a>                     </li>                   </ul>                 </li>                                  <li>                   <a href="shops.html">                     <i class="fa fa-laptop"></i> 店铺管理                   </a>                 </li>                 <li>                   <a href="yuyue.html">                     <i class="fa fa-laptop"></i> 订单管理                   </a>                 </li>                 <li>                   <a href="news.html">                     <i class="fa fa-laptop"></i> 养生文化                   </a>                 </li>                 <li>                   <a href="product.html">                     <i class="fa fa-laptop"></i> 商品管理                   </a>                 </li>                 <!-- <li>                   <a href="notice.html">                     <i class="fa fa-laptop"></i> 系统通知                   </a>                 </li> -->                 <li>                   <a href="vipCard.html">                     <i class="fa fa-laptop"></i> 会员卡                   </a>                 </li>                 <li>                   <a href="task.html">                     <i class="fa fa-laptop"></i> 任务管理                   </a>                 </li>                 <li>                   <a href="yeji.html">                     <i class="fa fa-laptop"></i> 业绩                   </a>                 </li>                                  <li>                   <a>                     <i class="fa fa-laptop"></i> 消息管理                     <span class="fa fa-chevron-down"></span>                   </a>                   <ul class="nav child_menu">                     <li> <a href="notice.html">系统通知</a> </li>                   </ul>                 </li>                 <li>                   <a>                     <i class="fa fa-laptop"></i> 数据魔方                     <span class="fa fa-chevron-down"></span>                   </a>                   <ul class="nav child_menu">                     <li> <a href="data-turnover.html">营业额</a> </li>                     <li> <a href="data-client.html">客户</a> </li>                     <li> <a href="data-inventory.html">库存</a> </li>                     <li> <a href="data-clockingIn.html">出勤记录</a> </li>                   </ul>                 </li>                 <li>                   <a>                     <i class="fa fa-laptop"></i> 客户                     <span class="fa fa-chevron-down"></span>                   </a>                   <ul class="nav child_menu">                     <li> <a href="vip.html">会员列表</a> </li>                     <li> <a href="vip-birthday.html">生日</a> </li>                     <li> <a href="vip-warning.html">预警</a> </li>                     <li> <a href="vip-callback.html">回访记录</a> </li>                   </ul>                 </li>                 <li>                   <a href="business-college.html">                     <i class="fa fa-laptop"></i> 商学院                   </a>                 </li>                                  <li>                   <a>                     <i class="fa fa-laptop"></i> 系统设置                     <span class="fa fa-chevron-down"></span>                   </a>                   <ul class="nav child_menu">                     <li> <a href="category.html">分类管理</a> </li>                     <li> <a href="staff.html">员工管理</a> </li>                   </ul>                 </li>                </ul>             </div>            </div>
             
             <!-- /sidebar menu -->
           
@@ -118,19 +117,7 @@
                           </select>
                         </div>
                       </div>
-                      <!-- <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" >选择时间
-                          <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <select class="form-control">
-                            <option>今日</option>
-                            <option>本周</option>
-                            <option>本月</option>
-                            <option>本季</option>
-                          </select>
-                        </div>
-                      </div> -->
+                      
                       <div class="form-group">
                         <label for="today" class="control-label col-md-3 col-sm-3 col-xs-12">今日</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -160,7 +147,7 @@
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <button type="submit" class="btn btn-success">确定</button>
+                          <button type="submit" class="btn btn-success" onclick="window.location.href='task.html'">确定</button>
                         </div>
                       </div>
             
@@ -183,12 +170,9 @@
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
-
-    <!-- Datatables -->
-    <!-- 表格基础功能 -->
-    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <!-- 表格响应式美化 -->
-    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>  
+    <!-- 验证插件 -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+    
     
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
